@@ -1,3 +1,50 @@
 \section{Problem I}
 
-\textbf{Solution:} \\
+
+\begin{enumerate}[label=(\alph*)]
+	\item 
+		\textbf{Solution:} \\
+		To get the expected number of recursive calls, we let $x_k$ be the indicator random variable associated with the event in which the $k$th element is chosen as $x^{*}$. Thus,
+		$$ x_k = \begin{cases} 1 & $if the $k$th smallest element is chosen as $ x^{*}\\ 0 & $otherwise$ \end{cases} $$
+		Let $T(n)$ denotes the expected number of recursive calls of a set of numbers with size of $n$. Thus, 
+		$$ T(n) = \begin{cases} T(0) & $if the largest element is chosen as $ x^{*}\\ T(1) + T(0) & $if the second largest element is chosen as $ x^{*} \\ T(2) + T(0) & $if the third largest element is chosen as $ x^{*} \\ \cdot \\ \cdot \\ \cdot \\ T(n - 1) + T(0) & $if the smallest element is chosen as $ x^{*} \end{cases} $$
+		Then we have,
+		$$ T(n) = x_0T(0) + \sum_{k = 1}^{n - 1}x_k(T(k)+ T(0)) $$
+		\begin{align*}
+		E(T(n)) &= \frac{1}{n} \cdot T(0) + E(\sum_{k = 1}^{n - 1}x_k(T(k)+ T(0)))\\
+		&= \frac{1}{n} \cdot T(0) + \sum_{k = 1}^{n - 1}\left\{[E(x_kT(k))] + E[x_kT(0)]\right\}\\
+		&= \frac{1}{n} \cdot T(0) + \frac{1}{n}\sum_{k = 1}^{n - 1}E[T(k)] + \frac{n - 1}{n} \cdot T(0)\\
+		&= T(0) + \frac{1}{n}\sum_{k = 1}^{n - 1}E[T(k)]
+		\end{align*}
+
+		Where $T(0) = 1$. So,
+		$$ E(T(n)) = T(0) + \frac{1}{n}\sum_{k = 1}^{n - 1}E[T(k)] $$
+
+	\item 
+		\textbf{Solution:} \\
+		According to the result we got from (a), we have:
+		$$ \sum_{k = 1}^{n - 1}E[T(k)] = n \cdot (E(T(n)) - T(0)) $$
+		Also, we have,
+		$$ \sum_{k = 1}^{n - 2}E[T(k)] = (n - 1) \cdot (E(T(n - 1)) - T(0)) $$
+		Substract two equations above we have:
+		\begin{align*}
+		E(T(n - 1)) &= n \cdot (E(T(n)) - T(0)) - (n - 1) \cdot (E(T(n - 1) - T(0))\\
+		nE(T(n)) - nE(T(n - 1)) &= T(0) = 1\\
+		E(T(n)) &= E(T(n - 1)) + \frac{1}{n}
+		\end{align*}
+		Thus, we have,
+		\begin{align*}
+		E(T(n)) &= E(T(n - 1)) + \frac{1}{n}\\
+		E(T(n - 1)) &= E(T(n - 2)) + \frac{1}{n - 1}\\
+		... &= ...\\
+		E(T(2)) &= E(T(1)) + \frac{1}{2}
+		\end{align*}
+		Which could be simplified as, 
+		$$ E(T(n)) = E(T(1)) + \sum_{i = 2}^{n} \frac{1}{i} $$
+		Since $ E(T(1)) = 1 $,
+		$$ E(T(n)) = \sum_{i = 1}^{n} \frac{1}{i} $$
+	\item 
+		\textbf{Solution:} \\
+	\item 
+		\textbf{Solution:} \\
+\end{enumerate}
