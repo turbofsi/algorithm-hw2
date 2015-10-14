@@ -1,3 +1,15 @@
 \section{Problem IV}
 
-\textbf{Solution:} \\
+\begin{enumerate}[label=(\alph*)]
+	\item \textbf{Solution:} \\
+	To show the rank of the root is $O(logn)$, we could first alternatively show that total nodes of a leftist heap with length of the rank of root is $k$ is at least $2^{k + 1} - 1$.
+	\textbf{Proof:}\\
+	Proof: By induction on the height $h$ of $T$.
+	Basis ($h=0$): Then $T$ consists of a single node and its right path has length $k=0$. Indeed, $T$ has $1 \geq 2^{1} - 1$ nodes, as wanted.\\
+	\textit{Inductive Step} ($h>0$): Suppose the theorem holds for all leftist heaps that have height $< h$
+	and let $T$ be a leftist heap of height $h$. Further, let $k$ be the length of $T$’s right path and $n$
+	be the number of nodes in $T$. Consider two cases:
+	\textit{Case 1}: $k=0$ (i.e. $T$ has no right subtree). But then clearly $n \geq 1 = 2^1 - 1$ as wanted.
+	\textit{Case 2}: $k>0$. Let $T_L$, $T_R$ be the left and right subtrees of $T$; $n_L$, $n_R$ be the number of
+	nodes in $T_L$ and $T_R$; and $k_L$, $k_R$ be the lengths of the right paths in $T_L$ and $T_R$ respectively.
+\end{enumerate}
