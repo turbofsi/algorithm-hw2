@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1444704382 "/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.tex" "/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.pdf" "hw2" 1444704382
-  "/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.aux" 1444704382 823 f1ac03a2b2a363292258e1aa5ee347ba ""
+["pdflatex"] 1444803765 "/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.tex" "/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.pdf" "hw2" 1444803766
+  "/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.aux" 1444803765 823 e0c0713ceb92f534998aeca2642b4fe2 ""
   "/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.tex" 1444700792 3508 6348c798abdc878ccd6999d4f01a8c23 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -40,6 +40,7 @@
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb" 1164221255 36507 bc28f9f0cdba50a8a348a6e4dc8a5378 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb" 1164221255 37756 112837e95d30cb64c320437ea63bd4d6 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb" 1136849748 34958 9a907601efb56a2c9429693f13b38b87 ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb" 1136849748 13137 9cf0e1f3fa8b74ec708377d745022d53 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb" 1136849748 22192 22800790ceca09b5f3b0be051c1e852e ""
   "/usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futb8t.vf" 1136768653 2168 d2ac693e07cd79dbc2b914caee3e8df0 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futmii.vf" 1136768653 1332 62b87bc157157fd0616b8398929f8399 ""
@@ -122,16 +123,16 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1432479681 3849859 39a7d258195bde2394e244961601fbc5 ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "hw2.aux" 1444704382 823 f1ac03a2b2a363292258e1aa5ee347ba ""
+  "hw2.aux" 1444803765 823 e0c0713ceb92f534998aeca2642b4fe2 ""
   "hw2.tex" 1444700792 3508 6348c798abdc878ccd6999d4f01a8c23 ""
   "hw2p3.png" 1444688133 46846 66f92b41ebd22a0ea4587799a0de31f8 ""
-  "problem1.tex" 1444704377 2227 3582afb8638702530dc4dfa9496e7dd1 ""
+  "problem1.tex" 1444803704 5119 6ca0ae2965787821f629850c2c68b561 ""
   "problem2.tex" 1444614386 2505 b8d5386ac41a64b35cc7d2b03ac01d40 ""
-  "problem3.tex" 1444689824 2414 e6deaa9b47553c75f954f496bee13d5b ""
+  "problem3.tex" 1444803761 2531 ad049124b13c6434ff5ec72e50573137 ""
   "problem4.tex" 1444448971 43 329f61774d6e25c4e03f39c81940d300 ""
   (generated)
-  "/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.log"
   "hw2.log"
   "hw2.pdf"
-  "hw2.aux"
+  "/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.log"
   "/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.pdf"
+  "hw2.aux"

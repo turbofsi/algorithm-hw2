@@ -252,13 +252,13 @@ INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem2.tex
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/fourier/ts1futs.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/fourier/ts1futs.fd
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futr8c.tfm
+INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem3.tex
+INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem3.tex
+INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2p3.png
+INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2p3.png
+INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2p3.png
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futr8c.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-orns.tfm
-INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem3.tex
-INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem3.tex
-INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2p3.png
-INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2p3.png
-INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2p3.png
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futri8t.tfm
 INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem4.tex
 INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem4.tex
@@ -267,6 +267,7 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt-it
 INPUT /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.aux
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb
