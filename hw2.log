@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 OCT 2015 02:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 OCT 2015 09:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -806,50 +806,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
  []
 
 [6 </Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2p3.png>]) 
-(/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem4.tex [7]
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+(/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem4.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 23--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 [9]
-Overfull \hbox (19.65532pt too wide) in paragraph at lines 90--92
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+Overfull \hbox (19.65532pt too wide) in paragraph at lines 93--95
 \T1/futs/m/n/10.95 Using the MERGE al-go-rithm in prob-lem(b) we can write al-g
 o-rithm for In-sert and DeleteMin: 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--105
+Underfull \hbox (badness 10000) in paragraph at lines 105--108
 
  []
 
@@ -874,7 +908,7 @@ exlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
 Output written on /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder
-/hw2.pdf (10 pages, 120586 bytes).
+/hw2.pdf (10 pages, 120384 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream

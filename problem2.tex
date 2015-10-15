@@ -20,7 +20,7 @@ Suppose that there is an element $x_* \in U$ such that $x_* > x_{(k)}$, which im
 Now suppose that the set of $k - 1$ largest elements of $X$:
 $$ L = \left\{x_{(1)}, x_{(2)}, ... ,x_{(k-1)}\right\} $$  
 Since those elements in set $L$ must bigger than those elements in set $S$, we could remove those comparisons from $T$. Call the reduced tree $R$. Since the reduced tree $R$ also identifies the largest element of $S$, based on the conclusion we got from base case $k = 1$, $R$ must have at least $2^{n - k}$ leaves. Since there are $\dbinom{n}{k - 1}$ choices for set $L$, we conclude that $T$ has at least
- $$\dbinom{n}{k - 1} \cdot 2^{n - k}$$ 
+$$2^{n - k} \times \dbinom{n}{k - 1}$$
  leaves which also implies that the number of comparisons is at least
  $$n - k + log\dbinom{n}{k - 1}$$ 
  Thus we proved the argument.  
