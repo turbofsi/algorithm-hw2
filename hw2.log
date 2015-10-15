@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  14 OCT 2015 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 OCT 2015 02:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -512,7 +512,7 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              I'd suggest to use 
 (scrartcl)              package `scrlayer-scrpage'.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `fancyhdr' on input line 48.
+(scrartcl)              package `fancyhdr' on input line 49.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip67
@@ -524,49 +524,56 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 \f@ncyO@erf=\skip73
 \f@ncyO@olf=\skip74
 \f@ncyO@orf=\skip75
-) (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.aux)
+) (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.aux
+
+LaTeX Warning: Label `euclid' multiply defined.
+
+
+LaTeX Warning: Label `euclid' multiply defined.
+
+)
 \openout1 = `hw2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 81.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 82.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 82.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 81.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 81.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 82.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 82.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 81.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 81.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 82.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 82.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 81.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 82.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 81.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 82.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 ) (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -627,32 +634,32 @@ Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count139
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 84.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 85.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 84
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 85
 .
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 84.
+(Font)              scaled to size 13.24796pt on input line 85.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 84.
+(Font)              scaled to size 9.19998pt on input line 85.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 84.
+(Font)              scaled to size 7.35999pt on input line 85.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 84.
+(Font)              scaled to size 13.24796pt on input line 85.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 84.
+(Font)              scaled to size 9.19998pt on input line 85.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 84.
-LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+(Font)              scaled to size 7.35999pt on input line 85.
+LaTeX Font Info:    Try loading font information for U+msa on input line 85.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+LaTeX Font Info:    Try loading font information for U+msb on input line 85.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem1.tex
@@ -674,6 +681,14 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+
+Overfull \hbox (16.58597pt too wide) detected at line 73
+\FML/futmi/m/it/10.95 Pr\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 z[][]z[]\T1/f
+uts/m/n/10.95 ) \FMS/futm/m/n/10.95 Å \FML/futmi/m/it/10.95 Pr\T1/futs/m/n/10.9
+5 (\FML/futmi/m/it/10.95 z[][]z[][]Z[]\T1/futs/m/n/10.95 ) \FMS/futm/m/n/10.95 
+Å []
+ []
+
 ) (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
@@ -727,11 +742,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
+[4]
 LaTeX Font Info:    Try loading font information for TS1+futs on input line 15.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-) [4]
+)
 Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
@@ -756,14 +772,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-<hw2p3.png, id=21, 372.39125pt x 176.66pt>
+[5] <hw2p3.png, id=24, 372.39125pt x 176.66pt>
 File: hw2p3.png Graphic file (type png)
 <use hw2p3.png>
 Package pdftex.def Info: hw2p3.png used on input line 14.
 (pdftex.def)             Requested size: 148.95386pt x 70.66273pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
@@ -774,7 +787,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-[5]
+
 Overfull \hbox (8.49774pt too wide) in paragraph at lines 23--24
 \FML/futmi/m/it/10.95 B\T1/futs/m/n/10.95 [\FML/futmi/m/it/10.95 midb\T1/futs/m
 /n/10.95 ]$, we can safely dis-card sec-tion4 since ev-ery el-e-ment of sec-tio
@@ -788,29 +801,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
  []
 
 ) (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/problem4.tex [
-6 </Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2p3.png>]) [
-7] (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.aux) ) 
+6 </Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2p3.png>] [7
+]
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+[8]
+Overfull \hbox (19.65532pt too wide) in paragraph at lines 90--92
+\T1/futs/m/n/10.95 Using the MERGE al-go-rithm in prob-lem(b) we can write al-g
+o-rithm for In-sert and DeleteMin: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
+
+ []
+
+) [10] (/Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder/hw2.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 9489 strings out of 493089
- 147160 string characters out of 6134842
- 376496 words of memory out of 5000000
- 12762 multiletter control sequences out of 15000+600000
+ 9497 strings out of 493089
+ 147282 string characters out of 6134842
+ 378535 words of memory out of 5000000
+ 12770 multiletter control sequences out of 15000+600000
  85858 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,11n,54p,1586b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/u
-sr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/adobe/utopia/putri8a.pfb>
+ 50i,11n,54p,1719b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
 Output written on /Users/apple/Documents/2015-FALL/ece1762/homeworks/hw2-folder
-/hw2.pdf (7 pages, 107881 bytes).
+/hw2.pdf (10 pages, 119744 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

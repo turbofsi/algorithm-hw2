@@ -2,14 +2,107 @@
 
 \begin{enumerate}[label=(\alph*)]
 	\item \textbf{Solution:} \\
-	To show the rank of the root is $O(logn)$, we could first alternatively show that total nodes of a leftist heap with length of the rank of root is $k$ is at least $2^{k + 1} - 1$.
+	To show the rank of the root is $O(logn)$, we could first alternatively show that total nodes of a leftist heap with length of the rank of root is $k$ is at least $2^{k + 1} - 1$.\\
 	\textbf{Proof:}\\
-	Proof: By induction on the height $h$ of $T$.
-	Basis ($h=0$): Then $T$ consists of a single node and its right path has length $k=0$. Indeed, $T$ has $1 \geq 2^{1} - 1$ nodes, as wanted.\\
+	Proof: By induction on the height $h$ of $L$.
+	Basis ($h=0$): Then $L$ consists of a single node and its right path has length $k=0$. Indeed, $L$ has $1 \geq 2^{1} - 1$ nodes, as wanted.\\
 	\textit{Inductive Step} ($h>0$): Suppose the theorem holds for all leftist heaps that have height $< h$
-	and let $T$ be a leftist heap of height $h$. Further, let $k$ be the length of $T$’s right path and $n$
-	be the number of nodes in $T$. Consider two cases:
-	\textit{Case 1}: $k=0$ (i.e. $T$ has no right subtree). But then clearly $n \geq 1 = 2^1 - 1$ as wanted.
-	\textit{Case 2}: $k>0$. Let $T_L$, $T_R$ be the left and right subtrees of $T$; $n_L$, $n_R$ be the number of
-	nodes in $T_L$ and $T_R$; and $k_L$, $k_R$ be the lengths of the right paths in $T_L$ and $T_R$ respectively.
+	and let $L$ be a leftist heap of height $h$. Further, let $k$ be the length of $L$'s right path and $n$
+	be the number of nodes in $L$. Consider two cases:\\
+	\textit{Case 1}: $k=0$ (i.e. $L$ has no right subtree). But then clearly $n \geq 1 = 2^1 - 1$ as wanted.\\
+	\textit{Case 2}: $k>0$. Let $L_L$, $L_R$ be the left and right subtrees of $L$; $n_L$, $n_R$ be the number of
+	nodes in $L_L$ and $L_R$; and $k_L$, $k_R$ be the lengths of the right paths in $L_L$ and $L_R$ respectively. Because the left and right subtrees of a leftist heap are leftist heaps and the distance of a leftist heap's root is equal to the length of the tree's right path. Then we have $k_R = k - 1$, and by definition of leftist heap $k_L \geq k_R$. Since $L_L$, $L_R$ have height < $h$ we get, by induction hypothesis, $n_R \geq 2^k - 1$ and $n_L \geq 2^k - 1$. But $n = n_L + n_R +1$ and thus, $n \geq 2^k - 1 + 2^k - 1 + 1 =2^{k+1} - 1$. Therefore $n \geq 2^{k+1} - 1$, as wanted. 
+	\begin{align*}
+	n &\geq 2^{rank(x) + 1} - 1\\
+	n + 1 &\geq 2^{rank(x) + 1}\\
+	log(n + 1) &\geq rank(x) + 1\\
+	rank(x) &\leq lg(n + 1) - 1 = O(logn) 
+	\end{align*}
+
+	\item \textbf{Solution:} \\
+	If one of the two leftist heap is empty, we are done. Otherwise we want to merge two non-empty leftist heaps $h_1$ and $h_2$. We can assume that without loss of generality, that the key in the root of $h_1$ is less than or equal to the key in the root of $h_2$. If $key(h_1) > key(h_2)$ we swap $h_1$ and $h_2$, so $h_1$ has the smaller root. Recursively we merge $h_2$ with the right subtree of $h_1$, and we make the resulting leftist tree into the right subtree of $h_1$. If this has made the rank of the right subtree's root longer than the rank of the left subtree's root, we simply interchange the left and right children of $h_1$'s root(thereby making what used to be the right subtree of $h_1$ into its left subtree and vice-versa). Finally, we update the rank of $h_1$'s root . The pseudo code below gives more details. 
+	\begin{algorithm}
+	\caption{MERGE($h_1$, $h_2$)}\label{euclid}
+	\begin{algorithmic}
+	\If {$h_1  = \phi$} \Return $h_2$
+	\ElsIf {$h_2 = \phi$} \Return $h_1$
+	\Else
+		\If {$key(h_1) > key(h_2)$} 
+		\State $swap(h_1, h_2)$
+		\EndIf
+		$right(h_1) \gets MERGE(right(h_1), h_2) $ \\
+		// merge $h_2$ on right 
+		% \If {$rightChildOf(h_1) \neq \phi$ \textbf{and} ($leftChildOf(h_1) = \phi$ \textbf{or} $rank(rightChildOf(h_1)$) > $rank(leftChildOf(h_2)$))} 
+		% \State $swap(rightChildOf(h_1), leftChildOf(h_1))$ \\
+		% // swap children to make leftist \\
+		% \EndIf
+		% \If {$rightChildOf(h_1) = \phi$} 
+		% \State $rank(h_1) = 0$
+		% \Else
+		% \State $rank(h_1) \gets rank(rightChildOf(h_1)) + 1$ \\
+		% // update rank value \\
+		% \EndIf
+		% \Return $h_1$
+	\EndIf
+	\State \textbf{end} MERGE
+	\end{algorithmic}
+	\end{algorithm}
+	The complexity of the algorithm is proportional to the number of recursive calls to MERGE.  It is easy to see that, in the worst case, this will be equal to rank of $h_1$'s root plus rank of $h_2$'s root. Let the number of nodes in these trees be $n_1$ and $n_2$. By the proof procedure in question(a), we have $rank(h_1) \leq log(n_1)$, and $rank(h_2) \leq log(n_2)$. Thus $rank(h_1) + rank(h_2) \leq logn_1 + logn_2$. Let $n$ = max($n_1$, $n_2$). Then $rank(h_1) + rank(h_2) \leq 2logn$. Therefore, MERGE is called at most $2logn$ times, and the complexity of the algorithm is $O(log(n)$ in the worst case. \\
+	Meanwhile, because we maintain the key($h_1$) is smaller than key($h_2$) by swapping $h_1$ and $h_2$ if hey($h_1$) < key($h_2$) and then we let the rightChildOf($h_1$) equals to the merge result of rightChildOf($h_1$) and $h_2$. So we will always let the node with smaller key merge earlier than the node with larger key. That is, the order invariant is maintained. 
+
+	\item \textbf{Solution:} \\
+	We can suppose that $x$ is not on the rightmost path of the given leftist heap and the rank of $x$ changed after MERGE operation. Since every MERGE operation happens on the right child of every node, so for those node not on the right most path will still follow $rank(x) = 1 + rank(right(x))$ without any changes with their rank in the new merged tree which is a contradiction.\\
+	So, the rank of a node $x$ might change if and only if $x$ is on the rightmost path.
+
+	\item \textbf{Solution:} \\
+	If one of the two leftist heap is empty, we are done. Otherwise we want to merge two non-empty leftist heaps $h_1$ and $h_2$. We can assume that without loss of generality, that the key in the root of $h_1$ is less than or equal to the key in the root of $h_2$. If $key(h_1) > key(h_2)$ we swap $h_1$ and $h_2$, so $h_1$ has the smaller root. Recursively we merge $h_2$ with the right subtree of $h_1$, and we make the resulting leftist tree into the right subtree of $h_1$. If this has made the rank of the right subtree's root longer than the rank of the left subtree's root, we simply interchange the left and right children of $h_1$'s root(thereby making what used to be the right subtree of $h_1$ into its left subtree and vice-versa). Finally, we update the rank of $h_1$'s root . The pseudo code below gives more details. 
+	\begin{algorithm}
+	\caption{MERGE($h_1$, $h_2$)}\label{euclid}
+	\begin{algorithmic}
+	\If {$h_1  = \phi$} \Return $h_2$
+	\ElsIf {$h_2 = \phi$} \Return $h_1$
+	\Else
+		\If {$key(h_1) > key(h_2)$} 
+		\State $swap(h_1, h_2)$
+		\EndIf
+		$rightChildOf(h_1) \gets MERGE(rightChildOf(h_1), h_2) $ \\
+		// merge $h_2$ on right and swap if needed \\
+		\If {$right(h_1) \neq \phi$ \textbf{and} ($left(h_1) = \phi$ \textbf{or} $rank(right(h_1)$) > $rank(left(h_2)$))} 
+		\State $swap(right(h_1), left(h_1))$ \\
+		// swap children to make leftist \\
+		\EndIf
+		\If {$right(h_1) = \phi$} 
+		\State $rank(h_1) = 0$
+		\Else
+		\State $rank(h_1) \gets rank(right(h_1)) + 1$ \\
+		// update rank value \\
+		\EndIf
+		\Return $h_1$
+	\EndIf
+	\State \textbf{end} MERGE
+	\end{algorithmic}
+	\end{algorithm}
+
+	The order invariant is maintained which is proved in question($b$). As shown in the pseudo code above, we can note that if node $x$ with $rank(left(x)) < rank(right(x))$, then its children $left(x)$ and $right(x)$ will be swapped in updating.\\
+
+	The running time analysis is pretty similar with question($b$), observe that there is a constant number of steps that must be executed before and after each recursive call to MERGE. Thus the complexity of the algorithm is proportional to the number of recursive calls to MERGE.  It is easy to see that, in the worst case, this will be equal to rank of $h_1$'s root plus rank of $h_2$'s root. Let the number of nodes in these trees be $n_1$ and $n_2$. By the proof procedure in question(a), we have $rank(h_1) \leq log(n_1)$, and $rank(h_2) \leq log(n_2)$. Thus $rank(h_1) + rank(h_2) \leq logn_1 + logn_2$. Let $n$ = max($n_1$, $n_2$). Then $rank(h_1) + rank(h_2) \leq 2logn$. Therefore, MERGE is called at most $2logn$ times, and the complexity of the algorithm is $O(log(n)$ in the worst case. \\
+
+	\item \textbf{Solution:} \\
+	Using the MERGE algorithm in problem(b) we can write algorithm for Insert and DeleteMin:\\
+
+	Insert($e$, $r$) where $e$ is an element, $r$ is the root of tree.\\
+
+	1. Let $r'$ be a the leftist tree containing only $e$.\\
+	2. MERGE($r'$, $r$).\\
+
+	As is described above, we could treat the element we want to insert to the given tree as a leftist heap contains only one element as root node. Then we could merge this leftist heap with the given leftist heap as we did before. The running time of merging and rank updates is $O(logn)$ as we discussed in previous steps.\\
+
+	DeleteMin($r$)\\
+
+	1. $min$ $\gets$ element stored at $r$ (root of the given leftist heap)\\
+	2. $r \gets MERGE(left(r), right(r))$\\
+	3. \textbf{return} $min$.\\
+
+	To delete the minimum element in the give leftist heap, we can start with removing the root of the given leftist heap. Then, we could merge and update the rank of its left and right subtrees, which has a running time of $O(logn)$ as we discussed above. 
+
 \end{enumerate}

@@ -9,7 +9,7 @@ When $k = 1$, $V(n, 1)$ represent the number of comparisons for finding the larg
 
 Let $T$ be a comparison tree that identifies the $k$th largest element $x_{(k)} \in X$.\\\\
 
-Suppose we are at some outcome box for determing the $k$th largest element $x_{(k)}$. Assume there are some elements not yet directly known to be bigger or smaller than $x_{(k)}$. \\
+Suppose we are at some outcome box for determining the $k$th largest element $x_{(k)}$. Assume there are some elements not yet directly known to be bigger or smaller than $x_{(k)}$. \\
 
 \begin{itemize}
 	\item Set $U$ is set of elements not yet directly known to be bigger or smaller than $x_{(k)}$.
@@ -19,7 +19,11 @@ Suppose we are at some outcome box for determing the $k$th largest element $x_{(
 Suppose that there is an element $x_* \in U$ such that $x_* > x_{(k)}$, which implies that $\mid L \mid = k - 1 + 1 = k$ and $x_{(k)}$ become the $k + 1$ largest element. However, we have known that $x_{(k)}$ is the $k$th largest element which is a contradiction. So we can conclude that when a decision reaching the right outcome of finding the $k$th largest element also decide correctly which the $k - 1$ larger elements are.\\\\
 Now suppose that the set of $k - 1$ largest elements of $X$:
 $$ L = \left\{x_{(1)}, x_{(2)}, ... ,x_{(k-1)}\right\} $$  
-Since those elements in set $L$ must bigger than those elements in set $S$, we could remove those comparisons from $T$. Call the reduced tree $R$. Since the reduced tree $R$ also identifies the largest element of $S$, based on the conclusion we got from base case $k = 1$, $R$ must have at least $2^{n - k}$ leaves. Since there are $\dbinom{n}{k - 1}$ choices for set $L$, we conclude that $T$ has at least $\dbinom{n}{k - 1} \cdot 2^{n - k}$ leaves which also implies that the number of comparisons is at least $n - k + log\dbinom{n}{k - 1}$. 
+Since those elements in set $L$ must bigger than those elements in set $S$, we could remove those comparisons from $T$. Call the reduced tree $R$. Since the reduced tree $R$ also identifies the largest element of $S$, based on the conclusion we got from base case $k = 1$, $R$ must have at least $2^{n - k}$ leaves. Since there are $\dbinom{n}{k - 1}$ choices for set $L$, we conclude that $T$ has at least
+ $$\dbinom{n}{k - 1} \cdot 2^{n - k}$$ 
+ leaves which also implies that the number of comparisons is at least
+ $$n - k + log\dbinom{n}{k - 1}$$ 
+ Thus we proved the argument.  
 
 
 
