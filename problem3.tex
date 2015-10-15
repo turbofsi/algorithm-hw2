@@ -22,7 +22,9 @@ If $mida + midb < k^{*}$, then it means that the $k^*$ smallest element is at \{
 
 However, if $mida + midb > k^{*}$, then it means that the $k^*$ smallest element is at \{Section1, Section2, Section3\} or \{Section1, Section3, Section4\}, the reason is as follows. If $A[mida] < B[midb]$, we can safely discard section4 since every element of section4 is bigger than $A[mida]$ and cannot be the $k^{*}$th smallest element of the union array. Similarly, If $A[mida] > B[midb]$ then we can discard section2.\\
 
-The pseudo code is as follows:
+The pseudo code is as follows:\\
+[10cm]
+
 \begin{algorithm}
 \caption{Find($A$, $B$, $k^{*}$), $k^{*} = n - k + 1$}\label{euclid}
 \begin{algorithmic}
@@ -33,15 +35,19 @@ The pseudo code is as follows:
 \State $mida \gets length(A)/2$
 \State $midb \gets length(B)/2$
 \If {$mida + midb < k^{*}$} 
-	\If {$A[mida] > B[midb]$}  $Find(A, B[midb + 1:], k^{*} - midb - 1)$
-	\Else  $Find(A[mida + 1:], B, k^{*} - mida - 1)$
+	\If {$A[mida] > B[midb]$}  $Find(A, B[midb + 1:], k^{*} - midb - 1)$\\
+	// \textit{B[midb + 1:] means subarray after index of midb}
+	\Else  $Find(A[mida + 1:], B, k^{*} - mida - 1)$\\
+	// \textit{A[mida + 1:] means subarray after index of mida}
 	\EndIf
 \Else 
-	\If {$A[mida] > B[midb]$}  $Find(A[:mida], B, k^{*})$
-	\Else  $Find(A, B[:midb], k^{*})$
+	\If {$A[mida] > B[midb]$}  $Find(A[:mida], B, k^{*})$\\
+	// \textit{A[:mida] means subarray before index of mida}
+	\Else  $Find(A, B[:midb], k^{*})$\\
+	// \textit{B[:midb] means subarray before index of midb}
 	\EndIf
 \EndIf
 \end{algorithmic}
 \end{algorithm}
 
-Since we halved the search space of A and B in each iteration, so the time complexity is $O(logn + logn) = O(logn)$
+Since we halved the search space of A and B in each iteration, in the worst case we may halved both $A$ and $B$ down to empty which will cost $log(n_1) + log(n_2) = 2logn$. so the time complexity is $O(logn)$

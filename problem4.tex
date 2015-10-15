@@ -65,7 +65,7 @@
 		\If {$key(h_1) > key(h_2)$} 
 		\State $swap(h_1, h_2)$
 		\EndIf
-		$rightChildOf(h_1) \gets MERGE(rightChildOf(h_1), h_2) $ \\
+		$right(h_1) \gets MERGE(right(h_1), h_2) $ \\
 		// merge $h_2$ on right and swap if needed \\
 		\If {$right(h_1) \neq \phi$ \textbf{and} ($left(h_1) = \phi$ \textbf{or} $rank(right(h_1)$) > $rank(left(h_2)$))} 
 		\State $swap(right(h_1), left(h_1))$ \\
